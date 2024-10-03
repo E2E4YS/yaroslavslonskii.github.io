@@ -1,27 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name's Portfolio</title>
+    <title>Iaroslav Slonskii - Aspiring Data Scientist & Analyst</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <div class="container">
+            <h1>Iaroslav Slonskii</h1>
+            <h2>Aspiring Data Scientist & Analyst</h2>
+            <p class="mission-statement">
+                I am a highly motivated Computer Science student with a passion for data.
+                My goal is to become a skilled Data Scientist/Analyst who transforms raw data
+                into actionable insights. With a background in data management, analysis, and
+                visualization, I aim to solve real-world problems using the power of data science.
+            </p>
+
+            <!-- Navigation Menu -->
+            <nav class="navigation">
+                <a href="#about-me">About Me</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
+
+    <!-- Main Content -->
     <main>
-        <section id="about">
+        <!-- About Me Section -->
+        <section id="about-me" class="container">
             <h2>About Me</h2>
-            <p>Write a brief description about yourself here.</p>
+            <div class="about-content">
+                <img src="assets/1689552357390.jpeg" alt="Iaroslav Slonskii" class="profile-photo">
+                <div class="about-details">
+                    <p>I am a Computer Science student at Kent State University with a 4.0 GPA. I have proficiency in
+                        Python, SQL, Tableau, PostgreSQL, and statistical analysis. My experience includes roles as a
+                        Geek Squad Agent at Best Buy and a Collections Representative at Synchrony.</p>
+                    <p>I am passionate about data analysis, machine learning, and data visualization.</p>
+                </div>
+            </div>
         </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase some of your key projects here.</p>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Movie Recommendation System</h3>
+                <img src="assets/rec_system.png" alt="Screenshot of the Movie Recommendation System project">
+                <div>
+                    <p>Web-based app utilizing the TMDb API and machine learning for personalized movie recommendations.
+                    </p>
+                    <p>Technologies: Python, Flask, TMDb API, Pandas, Scikit-learn, SQL, Bootstrap</p>
+                    <a href="https://movie-recommendationsystem-ad9e205393d5.herokuapp.com">Click here to view</a>
+                </div>
+            </div>
+            <div class="project">
+                <h3>Divvy Riders Activity Dashboard</h3>
+                <img src="assets/dashboard.png" alt="Screenshot of the Divvy Riders Activity Dashboard">
+                <div>
+                    <p>A Tableau dashboard analyzing Divvy bike-sharing data, highlighting peak hours and ride patterns.
+                    </p>
+                    <p>Technologies: Tableau, Data Visualization</p>
+                    <a
+                        href="https://public.tableau.com/app/profile/iaroslav.slonskii/viz/Divvyridersactivitystorypoint/WhoaretheRiders">View
+                        Dashboard</a>
+                </div>
+            </div>
+            <div class="coming-soon">
+                <h3>Coming Soon...</h3>
+                <p>More projects will be added here soon.</p>
+            </div>
+        </section>
+        <!-- CV/Resume Section -->
+        <section id="resume" class="container">
+            <h2>Resume</h2>
+            <p>Summary of my skills, education, and experience.</p>
+            <a href="assets/Resume-Iaroslav Slonskii.pdf" class="download-btn">Download My Resume</a>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a>.</p>
+<!-- Footer -->
+<footer>
+    <div class="contact-info">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:yaroslavslonskii@gmail.com">yaroslavslonskii@gmail.com</a></p>
+        <p>Phone: <a href="tel:3304478225">330-447-8225</a></p>
+        <p>Location: North Canton, OH</p>
+    </div>
+    
+    <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        <!-- Add other icons as needed -->
+    </div>
+
+    <div class="copyright">
+        <p>© Iaroslav Slonskii. All Rights Reserved.</p>
+    </div>
+</footer>
     </footer>
+
+    <!-- Script -->
+    <script src="script.js" defer></script>
 </body>
+
 </html>

@@ -1,21 +1,301 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Basic Reset */
+* {
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('abstract-low-poly-connection-lines-digital-technology-background_1017-25550.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
 header {
+    padding: 2rem 1rem;
     text-align: center;
-    padding: 50px;
-    background-color: #333;
-    color: white;
+    position: relative; /* For absolute positioning of the navigation */
 }
-main {
-    margin: 20px 0;
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
 }
+
+header h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+}
+
+.mission-statement {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    color: #d1d1d1;
+}
+
+/* Navigation Menu */
+.navigation {
+    position: absolute;
+    top: 20px; /* Adjust vertical alignment */
+    right: 20px; /* Align to the right */
+    display: flex; /* Use flexbox to arrange items in one line */
+    gap: 1.5rem; /* Add space between links */
+    list-style: none; /* Remove bullet points */
+}
+
+/* Navigation Links */
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Add hover effect */
+    border-radius: 5px;
+}
+
+/* Container */
+.container {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+/* About Me Section */
+#about-me {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#about-me h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#about-me h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fff;
+    margin: 1rem auto 0;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin: 1.5rem auto;
+}
+
+#about-me p {
+    max-width: 800px;
+    margin: 1rem auto;
+    color: #d1d1d1;
+}
+
+/* Portfolio Section */
+#portfolio {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#portfolio h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fff;
+    margin: 1rem auto 0;
+}
+
+/* Project Container */
+#portfolio .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.project p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    max-width: 600px;
+    color: #d1d1d1;
+}
+
+/* Coming Soon */
+.coming-soon {
+    text-align: center;
+    margin-top: 2rem;
+    font-style: italic;
+    color: #d1d1d1;
+}
+
+/* Resume Section */
+#resume {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+#resume h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#resume h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #fff;
+    margin: 1rem auto 0;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #004085;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #002f66;
+}
+
+/* Contact Section */
+#contact {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+/* Footer */
 footer {
+    padding: 3rem 1rem;
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    background: transparent; /* No background color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Icons */
+.footer-icons {
+    display: flex;
+    gap: 1.5rem; /* Increase gap for more spacing */
+}
+
+.footer-icons a {
+    color: #fff;
+    font-size: 2rem; /* Increase the size of the icons */
+    transition: transform 0.3s, color 0.3s; /* Add transition for hover effects */
+}
+
+.footer-icons a:hover {
+    color: #00aced; /* Change color on hover, you can choose any color */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+/* Copyright */
+.copyright {
+    font-size: 0.9rem;
+    color: #d1d1d1;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header h2 {
+        font-size: 1.4rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 1rem;
+        position: static;
+        margin-top: 2rem;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    #about-me p,
+    #portfolio p {
+        max-width: 90%;
+    }
 }
