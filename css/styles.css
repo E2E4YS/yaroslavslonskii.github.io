@@ -170,6 +170,25 @@ header h2 {
     color: #d1d1d1;
 }
 
+/* Project Button Styles */
+.project-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #004085; /* Dark blue background */
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.project-btn:hover {
+    background-color: #0056b3; /* Lighter blue on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
 /* Coming Soon */
 .coming-soon {
     text-align: center;
